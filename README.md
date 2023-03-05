@@ -3,7 +3,22 @@ Analysis of constitutive and Immunoproteasome expression level in solid tumors
 
 Make the following directories in yourcurrent path to run the R script and notebooks
 ## Notebook details
-Exploring_proteasome_expression_pan_cancer
+
+[Exploring_proteasome_expression_pan_cancer](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Exploring_proteasome_expression_pan_cancer.ipynb)
+
+[Differential_immune_cells_enrichment](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Differential_immune_cells_enrichment.ipynb)
+
+[Differential_pathways_analysis.ipynb](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Differential_pathways_analysis.ipynb)
+
+[EMT_correlation_analysis.ipynb](https://github.com/Rahulncbs/Immunoproteasome/blob/main/EMT_correlation_analysis.ipynb)
+
+[Copy_no_alteration_mutation_analysis.ipynb](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Copy_no_alteration_mutation_analysis.ipynb)
+
+[Survival_analysis_IP_CP.ipynb](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Survival_analysis_IP_CP.ipynb)
+
+[TNF_alpha_TGFB1_inducing_proteasome_expr_analysis.ipynb](https://github.com/Rahulncbs/Immunoproteasome/blob/main/TNF_alpha_TGFB1_inducing_proteasome_expr_analysis.ipynb)
+
+[Methylation_and_upstream_pathways_IP_analysis.ipynb](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Methylation_and_upstream_pathways_IP_analysis.ipynb)
 
 Create the data folder
 ```
