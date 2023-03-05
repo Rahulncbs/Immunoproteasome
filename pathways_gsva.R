@@ -12,7 +12,7 @@ library(RColorBrewer)
 library(readxl)
 
 ### Importing genes for 50 different hallmark pathways
-dat = as.matrix(read.csv("/Users/Rahul/Desktop/R_script/data/hall_mark_genes_df.csv", header = TRUE,row.names="X"))
+dat = as.matrix(read.csv("/data/r_input/hall_mark_genes_df.csv", header = TRUE,row.names="X"))
 geneSets <- list()
 ttd<-list()
 for(i in 1:50) 
@@ -21,9 +21,8 @@ for(i in 1:50)
   ttd<-append(ttd,dat[,i])
 }
 
-aa<-list.files(path = "/Users/Rahul/Desktop/R_script/gene_exp",pattern = "csv$") ## geting the gene exp file name
-
-setwd("/Users/Rahul/Desktop/R_script/gene_exp")
+aa<-list.files(path = "data/r_input/gene_exp",pattern = "csv$") ## geting the gene exp file name
+setwd("data/r_input/gene_exp")
 for (i in 1:33)
 {
   cts <- as.matrix(read.csv(aa[i],row.names="Hybridization.REF"))
@@ -33,11 +32,11 @@ for (i in 1:33)
   tt<-strsplit(tt,split='.',fixed=TRUE)[[1]][1] 
   
   ### writing GSVA score to the output folder
-  setwd("/Users/Rahul/Desktop/R_script/output") 
+  setwd("data/r_output")
   write.table(gsva_es, file=paste("GSVA_pathways_score_",tt,".tsv",sep =""), sep="\t")
   ######################################
-  ttd1<-list()
-  setwd("/Users/Rahul/Desktop/R_script/data")   
+  ttd1<-list()  
+  setwd("data/r_input") 
   sample_id_info <- as.matrix(read.csv(paste('high_low_ip.csv',sep="")))
   sample_id_info_1<-sample_id_info[sample_id_info[,4]==tt, ]
   design <- cbind(sampleGroup1=1, sampleGroup2vs1=c(rep(0, nrow(sample_id_info_1[sample_id_info_1[,3]=='low', ])), rep(1, nrow(sample_id_info_1[sample_id_info_1[,3]=='high', ]))))
@@ -49,7 +48,7 @@ for (i in 1:33)
   #### Differential pathway analysis
   fit <- lmFit(gsva_es1, design) 
   fit <- eBayes(fit) 
-  setwd("/Users/Rahul/Desktop/R_script/output")
+  setwd("data/r_output")
   write.csv(topTable(fit,number=Inf, coef="sampleGroup2vs1",resort.by="logFC"),file=paste('high_low_immuno_prtoeasome_Diff_pathway_exp_',tt,".csv",sep=""))
-  setwd("/Users/Rahul/Desktop/R_script/gene_exp") 
+  setwd("data/r_input/gene_exp") 
 }

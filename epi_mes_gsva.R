@@ -12,7 +12,7 @@ library(RColorBrewer)
 library(readxl)
 
 ### Importing genes for 50 different hallmark pathways
-dat = as.matrix(read.csv("/Users/Rahul/Desktop/R_script/data/Epithelial_Mesenchymal_gene_list.csv", header = TRUE,row.names="X"))
+dat = as.matrix(read.csv("data/r_input/Epithelial_Mesenchymal_gene_list.csv", header = TRUE,row.names="X"))
 colnames(dat)[1]
 geneSets <- list()
 for(i in 1:2) 
@@ -20,9 +20,9 @@ for(i in 1:2)
   geneSets[[colnames(dat)[i]]] <- dat[,i]
 }
 
-aa<-list.files(path = "/Users/Rahul/Desktop/R_script/gene_exp",pattern = "csv$")
-setwd("/Users/Rahul/Desktop/R_script/gene_exp")
-for (i in 1:33)
+aa<-list.files(path = "data/r_input/gene_exp",pattern = "csv$")
+setwd("data/r_input/gene_exp")
+for (i in 1:3)
 {
   cts <- as.matrix(read.csv(aa[i],row.names="Hybridization.REF"))
   gsva_es <- gsva(cts, geneSets,kcdf="Poisson",mx.diff=1,method='gsva')
@@ -30,8 +30,8 @@ for (i in 1:33)
   tt<-strsplit(tt,split='.',fixed=TRUE)[[1]][1]
   
   ### writing GSVA score to the output folder
-  setwd("/Users/Rahul/Desktop/R_script/output") 
+  setwd("data/r_output") 
   write.table(gsva_es, file=paste("GSVA_epithelial_mesenchymal_score_",tt,".tsv",sep =""), sep="\t")
-  setwd("/Users/Rahul/Desktop/R_script/gene_exp") 
+  setwd("data/r_input/gene_exp") 
 }
   
