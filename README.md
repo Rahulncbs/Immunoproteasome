@@ -36,6 +36,7 @@ mkdir data/gtex_normal
 mkdir data/r_input
 mkdir data/r_output
 mkdir data/r_input/gene_exp
+mkdire data/EMT_data
 ```
 
 
@@ -54,6 +55,7 @@ mkdir data/r_input/gene_exp
 **./data/r_output** contains the resulting gsva scroe and differential enrichment score for immune cells and pathways
 
 **./data/r_input/gene_exp** contains the gene expression from tcga to run the r script
+**./data/EMT_data** contains the time course gene expression data which can be downloaded from here
 
 
 
