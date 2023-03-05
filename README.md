@@ -20,6 +20,12 @@ Make the following directories in yourcurrent path to run the R script and noteb
 
 [Methylation_and_upstream_pathways_IP_analysis.ipynb](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Methylation_and_upstream_pathways_IP_analysis.ipynb)
 
+[immune_cells_gsva.R](https://github.com/Rahulncbs/Immunoproteasome/blob/main/immune_cells_gsva.R)
+
+[pathways_gsva.R](https://github.com/Rahulncbs/Immunoproteasome/blob/main/pathways_gsva.R)
+
+[epi_mes_gsva.R](https://github.com/Rahulncbs/Immunoproteasome/blob/main/epi_mes_gsva.R)
+
 Create the data folder
 ```
 mkdir data
