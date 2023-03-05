@@ -57,6 +57,11 @@ mkdir data/r_input/gene_exp
 
 
 
-**Required data**
+**Required data** 
+```
+unzip the data folder and put all the files in the ./data directory except tcga_tumor
+put tcga_tumor folder to ./data/tcga_tumor directory
+Download the additon GTEx normal gene expression data from  https://toil-xena-hub.s3.us-east-1.amazonaws.com/download/gtex_RSEM_Hugo_norm_count.gz  and put in the ./data/gtex_normal directory.
+```
 
-unzip the data folder and put all the data in the data path
+
