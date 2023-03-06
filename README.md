@@ -70,6 +70,7 @@ put the gene signature file Epithelial_Mesenchymal_gene_list.csv, hall_mark_gene
 leave the rest of the files in the ./data directory
 
 Download the additon GTEx normal gene expression data from  https://toil-xena-hub.s3.us-east-1.amazonaws.com/download/gtex_RSEM_Hugo_norm_count.gz  and put in the ./data/gtex_normal directory.
+Download the time course data from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147405  and put in the ./data/time_course directory
 ```
 
 
