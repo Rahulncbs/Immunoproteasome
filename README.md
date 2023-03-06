@@ -15,7 +15,7 @@ mkdire data/time_course
 mkdir /data/mehtylation
 ```
 ## Notebook details
-### Run the notebooks and run script in the given order
+### Run the notebooks and run R script in the given order
 
   1. [Exploring_proteasome_expression_pan_cancer](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Exploring_proteasome_expression_pan_cancer.ipynb)
 
