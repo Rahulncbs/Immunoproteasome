@@ -1,8 +1,7 @@
 # Immunoproteasome
 Analysis of constitutive and Immunoproteasome expression level in solid tumors
 
-Make the following directories in yourcurrent path to run the R script and notebooks
-Create the data folder
+Make the following directories in your current path to run the R script and notebooks
 ```
 mkdir data
 mkdir plots
@@ -16,6 +15,7 @@ mkdire data/EMT_data
 mkdir /data/mehtylation
 ```
 ## Notebook details
+### Run the notebooks and run script in the given order
 
   1. [Exploring_proteasome_expression_pan_cancer](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Exploring_proteasome_expression_pan_cancer.ipynb)
 
