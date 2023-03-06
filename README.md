@@ -12,7 +12,6 @@ mkdir data/r_input
 mkdir data/r_output
 mkdir data/r_input/gene_exp
 mkdire data/time_course
-mkdir /data/mehtylation
 ```
 ## Notebook details
 ### Run the notebooks and run R script in the given order
