@@ -73,4 +73,16 @@ Download the additon GTEx normal gene expression data from  https://toil-xena-hu
 Download the time course data from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147405  and put in the ./data/time_course directory
 ```
 
+### Required packages
+#### Python 3.6.8
+```
+matplotlib                    3.0.3
+numpy                         1.16.3
+seaborn                       0.9.0
+scipy                         1.5.4
+scanpy                        1.4.4
+pandas                        0.25.0
+statannot.                    0.2.3
+anndata                       0.6.22
 
+```
