@@ -48,7 +48,7 @@ mkdire data/time_course
 
 **./data/tcga_tumor** contans the TCGA gene expression data
 
-**./data/gtex_normal** contains the GTEx gene expression data downloaded from https://toil-xena-hub.s3.us-east-1.amazonaws.com/download/gtex_RSEM_Hugo_norm_count.gz 
+**./data/gtex_normal** contains the GTEx gene expression data downloaded from [https://toil-xena-hub.s3.us-east-1.amazonaws.com/download/gtex_RSEM_Hugo_norm_count.gz ]
 
 **./data/r_input** contains the input data for computing gsva score
 
@@ -56,7 +56,7 @@ mkdire data/time_course
 
 **./data/r_input/gene_exp** contains the gene expression from tcga to run the r script
 
-**./data/time_course** contains the time course gene expression data which can be downloaded from here
+**./data/time_course** contains the time course gene expression data which can be downloaded from here [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147405]
 
 
 
