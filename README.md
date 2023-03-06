@@ -89,3 +89,13 @@ lifelines                     0.26.3
 
 ```
 #### R version 3.6.3
+```
+GSVA                          1.32.0
+limma                         3.40.6
+preprocessCore                1.46.0
+GSEABase                      1.46.0
+Biobase                       2.44.0
+genefilter                    1.66.0
+RColorBrewer                  1.1.3
+readxl                        1.4.0
+```
