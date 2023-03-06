@@ -37,7 +37,7 @@ mkdir data/r_input
 mkdir data/r_output
 mkdir data/r_input/gene_exp
 mkdire data/EMT_data
-mkdir /data/correlation_methylation_vs_mRNA
+mkdir /data/mehtylation
 ```
 
 
@@ -59,7 +59,7 @@ mkdir /data/correlation_methylation_vs_mRNA
 
 **./data/EMT_data** contains the time course gene expression data which can be downloaded from here
 
-**./data/correlation_methylation_vs_mRNA/** contains the probe information for IRF1 transcription factor
+**./data/methylation** contains the methylation status of transcription factors
 
 
 
