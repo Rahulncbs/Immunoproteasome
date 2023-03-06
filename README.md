@@ -76,6 +76,7 @@ Download the time course data from https://www.ncbi.nlm.nih.gov/geo/query/acc.cg
 ### Required packages
 #### Python 3.6.8
 ```
+jupyter-notebook              5.7.11
 matplotlib                    3.0.3
 numpy                         1.16.3
 seaborn                       0.9.0
@@ -87,3 +88,4 @@ anndata                       0.6.22
 lifelines                     0.26.3
 
 ```
+#### R version 3.6.3
