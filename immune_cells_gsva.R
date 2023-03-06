@@ -34,7 +34,8 @@ for (i in 1:33)
   gsva_es <- gsva(cts, geneSets, mx.diff=1,kcdf="Poisson",method='gsva')
   tt<-strsplit(aa[i],split='_',fixed=TRUE)[[1]][3]
   tt<-strsplit(tt,split='.',fixed=TRUE)[[1]][1]
-   
+  
+  ## writing GSVA score to output file
   setwd("data/r_output") 
   write.table(gsva_es, file=paste("GSVA_immune_cells_",tt,".tsv",sep =""), sep="\t")
  
@@ -51,7 +52,7 @@ for (i in 1:33)
   tt<-strsplit(tt,split='.',fixed=TRUE)[[1]][1]
   
   
-  #### Differential pathway analysis
+  #### Differential immune cells analysis
   fit <- lmFit(gsva_es1, design)
   fit <- eBayes(fit)
   
