@@ -11,7 +11,7 @@ mkdir data/gtex_normal
 mkdir data/r_input
 mkdir data/r_output
 mkdir data/r_input/gene_exp
-mkdire data/EMT_data
+mkdire data/time_course
 mkdir /data/mehtylation
 ```
 ## Notebook details
@@ -40,20 +40,6 @@ mkdir /data/mehtylation
 11. [Methylation_and_upstream_pathways_IP_analysis.ipynb](https://github.com/Rahulncbs/Immunoproteasome/blob/main/Methylation_and_upstream_pathways_IP_analysis.ipynb)
 
 
-Create the data folder
-```
-mkdir data
-mkdir plots
-mkdir supplementary_tables
-mkdir data/tcga_tumor
-mkdir data/gtex_normal
-mkdir data/r_input
-mkdir data/r_output
-mkdir data/r_input/gene_exp
-mkdire data/EMT_data
-mkdir /data/mehtylation
-```
-
 
 **./data** contains all the input data for the analysis. tcga tumor gene expression data, GTEx normal gene expression data, tumor mutation burden, TCGA purity data,
 
@@ -71,7 +57,7 @@ mkdir /data/mehtylation
 
 **./data/r_input/gene_exp** contains the gene expression from tcga to run the r script
 
-**./data/EMT_data** contains the time course gene expression data which can be downloaded from here
+**./data/time_course** contains the time course gene expression data which can be downloaded from here
 
 
 
