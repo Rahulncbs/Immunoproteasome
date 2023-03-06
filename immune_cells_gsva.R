@@ -12,7 +12,7 @@ library(RColorBrewer)
 library(readxl)
 
 #========Preparing dataframe for the genesets and extracting expression data for a set of genes ##########
-dat = as.matrix(read_excel("data/r_input/immune_and_pathways_gene_list.xlsx"))
+dat = as.matrix(read_excel("data/r_input/immune_cells_gene_list.xlsx"))
 x<-c(dat[,1])
 geneSets <- list()
 ttd<-list()
